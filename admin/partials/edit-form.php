@@ -187,6 +187,9 @@ do_action( 'yikes-mailchimp-edit-form-notice' );
 							<li class="hidden_setting_list">
 								<a class="hidden_setting error-messages" onclick="return false;" data-attr-container="error-messages" title="<?php esc_attr_e( 'Customize Form Messages', 'yikes-inc-easy-mailchimp-extender' ); ?>" href="#"> <?php _e( 'Custom Messages', 'yikes-inc-easy-mailchimp-extender' ); ?></a>
 							</li>
+							<li class="hidden_setting_list">
+								<a class="hidden_setting eu-law-compliance-section" onclick="return false;" data-attr-container="eu-law-compliance-section" title="<?php esc_attr_e( 'EU Law Compliance', 'yikes-inc-easy-mailchimp-extender' ); ?>" href="#"> <?php _e( 'EU Law Compliance', 'yikes-inc-easy-mailchimp-extender' ); ?></a>
+							</li>
 							<?php do_action( 'yikes-mailchimp-edit-form-section-links', $form ); ?>
 						</ul>
 
