@@ -751,10 +751,6 @@ do_action( 'yikes-mailchimp-edit-form-notice' );
 													<!-- .inside -->
 												</div>
 
-
-
-
-
 												<!-- .postbox -->
 											</div>
 											<!-- .meta-box-sortables -->
@@ -767,6 +763,87 @@ do_action( 'yikes-mailchimp-edit-form-notice' );
 
 							</label>
 							<!-- End Error Messages -->
+
+							<!-- EU Law Compliance -->
+							<label class="hidden-setting-label yikes-easy-mc-hidden" for="form" id="eu-law-compliance-section" style="display: inline;">
+								<div id="poststuff">
+									<div id="post-body" class="metabox-holder  columns-1 ">
+										<div id="post-body-content">
+											<div class="meta-box-sortables ui-sortable">
+												<div class="postbox yikes-easy-mc-postbox">
+													<h3 class="edit-form-title"><span><?php _e( "Compliance Checkbox", 'yikes-inc-easy-mailchimp-extender' ); ?></span></h3>
+													<div class="inside eu-law-compliance-section-container">
+														<p style="opacity: 1; pointer-events: initial;">
+															<?php esc_html_e( "A checkbox will display below your form. Users cannot be added to your mailing list unless the checkbox is clicked.", 'yikes-inc-easy-mailchimp-extender' ); ?>
+														</p>
+														<div class="custom-field-section" style="opacity: 1; pointer-events: initial;" data-children-count="1">
+															<!-- title -->
+															<strong><?php _e( "Save Checkbox Opt-In as a Merge Field", 'yikes-inc-easy-mailchimp-extender' ); ?></strong>
+															
+															<!-- Dropdown -->
+															<select class="custom-select-field" name="custom-field[eu-compliance-law-save-opt-in-field]">
+																<option value="" disabled="" selected="">Select...</option>
+															</select>
+															
+															<!-- description -->
+															<p class="description"><?php _e( "Choose a merge field to store the opt-in compliance.", 'yikes-inc-easy-mailchimp-extender' ); ?></p>
+														</div><label class="custom-field-section" style="opacity: 1; pointer-events: initial;" data-children-count="1">
+															<strong><?php _e( "Merge Field Opt-In Value", 'yikes-inc-easy-mailchimp-extender' ); ?></strong>
+															<input type="text" class="widefat" name="custom-field[eu-compliance-law-save-opt-in-value]" id="custom-field" value="" placeholder="Enter a value, e.g. opted in">
+															<p class="description"><?php _e( "Enter what should be saved in the merge field chosen above.", 'yikes-inc-easy-mailchimp-extender' ); ?></p>
+														</label><div class="custom-field-section" style="opacity: 1; pointer-events: initial;" data-children-count="1">
+															<!-- title -->
+															<strong><?php _e( "Pre-check Compliance Checkbox", 'yikes-inc-easy-mailchimp-extender' ); ?></strong>
+															
+															<!-- Dropdown -->
+															<select class="custom-select-field" name="custom-field[eu-compliance-law-checkbox-precheck]">
+																<option value="" disabled="" selected="">Select...</option>
+																<option value="2">No</option>
+																<option value="1">Yes</option>
+															</select>
+															
+															<!-- description -->
+															<p class="description"><?php _e( "Should this checkbox be pre-checked on initial page load? (Note: pre-checking checkboxes may make your form noncompliant.)", 'yikes-inc-easy-mailchimp-extender' ); ?></p>
+														</div>
+														<div class="yikes-mailchimp-wysiwyg-field" style="opacity: 1; pointer-events: initial;">
+															<label for="image_url" class="widefat"><strong><?php _e( "Compliance Checkbox Consent Text", 'yikes-inc-easy-mailchimp-extender' ); ?></strong></label>
+															<div id="wp-eu-compliance-law-checkbox-text-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><div id="wp-eu-compliance-law-checkbox-text-editor-tools" class="wp-editor-tools hide-if-no-js"><div id="wp-eu-compliance-law-checkbox-text-media-buttons" class="wp-media-buttons"><button type="button" class="button insert-media add_media" data-editor="eu-compliance-law-checkbox-text"><span class="wp-media-buttons-icon"></span> Add Media</button></div>
+															<div class="wp-editor-tabs"><button type="button" id="eu-compliance-law-checkbox-text-tmce" class="wp-switch-editor switch-tmce" data-wp-editor-id="eu-compliance-law-checkbox-text">Visual</button>
+																<button type="button" id="eu-compliance-law-checkbox-text-html" class="wp-switch-editor switch-html" data-wp-editor-id="eu-compliance-law-checkbox-text">Text</button>
+															</div>
+														</div>
+														<div id="wp-eu-compliance-law-checkbox-text-editor-container" class="wp-editor-container" data-children-count="14"><div id="qt_eu-compliance-law-checkbox-text_toolbar" class="quicktags-toolbar"><input type="button" id="qt_eu-compliance-law-checkbox-text_strong" class="ed_button button button-small" aria-label="Bold" value="b"><input type="button" id="qt_eu-compliance-law-checkbox-text_em" class="ed_button button button-small" aria-label="Italic" value="i"><input type="button" id="qt_eu-compliance-law-checkbox-text_link" class="ed_button button button-small" aria-label="Insert link" value="link"><input type="button" id="qt_eu-compliance-law-checkbox-text_block" class="ed_button button button-small" aria-label="Blockquote" value="b-quote"><input type="button" id="qt_eu-compliance-law-checkbox-text_del" class="ed_button button button-small" aria-label="Deleted text (strikethrough)" value="del"><input type="button" id="qt_eu-compliance-law-checkbox-text_ins" class="ed_button button button-small" aria-label="Inserted text" value="ins"><input type="button" id="qt_eu-compliance-law-checkbox-text_img" class="ed_button button button-small" aria-label="Insert image" value="img"><input type="button" id="qt_eu-compliance-law-checkbox-text_ul" class="ed_button button button-small" aria-label="Bulleted list" value="ul"><input type="button" id="qt_eu-compliance-law-checkbox-text_ol" class="ed_button button button-small" aria-label="Numbered list" value="ol"><input type="button" id="qt_eu-compliance-law-checkbox-text_li" class="ed_button button button-small" aria-label="List item" value="li"><input type="button" id="qt_eu-compliance-law-checkbox-text_code" class="ed_button button button-small" aria-label="Code" value="code"><input type="button" id="qt_eu-compliance-law-checkbox-text_more" class="ed_button button button-small" aria-label="Insert Read More tag" value="more"><input type="button" id="qt_eu-compliance-law-checkbox-text_close" class="ed_button button button-small" title="Close all open tags" value="close tags"></div><div id="mceu_268" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_268-body" class="mce-container-body mce-stack-layout" data-children-count="0"><div id="mceu_269" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_269-body" class="mce-container-body"><div id="mceu_270" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_270-body" class="mce-container-body mce-stack-layout"><div id="mceu_271" class="mce-container mce-toolbar mce-stack-layout-item mce-first" role="toolbar"><div id="mceu_271-body" class="mce-container-body mce-flow-layout"><div id="mceu_272" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_272-body"><div id="mceu_244" class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-first mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_244" role="button" aria-haspopup="true"><button id="mceu_244-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Paragraph</span> <i class="mce-caret"></i></button></div><div id="mceu_245" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold (Ctrl+B)"><button id="mceu_245-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_246" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic (Ctrl+I)"><button id="mceu_246-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_247" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bulleted list (Shift+Alt+U)"><button id="mceu_247-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_248" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Numbered list (Shift+Alt+O)"><button id="mceu_248-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_249" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Blockquote (Shift+Alt+Q)"><button id="mceu_249-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-blockquote"></i></button></div><div id="mceu_250" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align left (Shift+Alt+L)"><button id="mceu_250-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_251" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align center (Shift+Alt+C)"><button id="mceu_251-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_252" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align right (Shift+Alt+R)"><button id="mceu_252-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div id="mceu_253" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit link (Ctrl+K)"><button id="mceu_253-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_254" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Insert Read More tag (Shift+Alt+T)"><button id="mceu_254-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-wp_more"></i></button></div><div id="mceu_255" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Fullscreen"><button id="mceu_255-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-fullscreen"></i></button></div><div id="mceu_256" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Toolbar Toggle (Shift+Alt+Z)"><button id="mceu_256-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-wp_adv"></i></button></div></div></div></div></div><div id="mceu_273" class="mce-container mce-toolbar mce-stack-layout-item mce-last" role="toolbar" style="display: none;"><div id="mceu_273-body" class="mce-container-body mce-flow-layout"><div id="mceu_274" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_274-body"><div id="mceu_257" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Strikethrough (Shift+Alt+D)"><button id="mceu_257-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-strikethrough"></i></button></div><div id="mceu_258" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Horizontal line"><button id="mceu_258-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-hr"></i></button></div><div id="mceu_259" class="mce-widget mce-btn mce-splitbtn mce-colorbutton" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_259-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_260" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Paste as text"><button id="mceu_260-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-pastetext"></i></button></div><div id="mceu_261" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Clear formatting"><button id="mceu_261-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-removeformat"></i></button></div><div id="mceu_262" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Special character"><button id="mceu_262-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-charmap"></i></button></div><div id="mceu_263" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Decrease indent"><button id="mceu_263-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_264" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Increase indent"><button id="mceu_264-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div><div id="mceu_265" class="mce-widget mce-btn mce-disabled" tabindex="-1" role="button" aria-label="Undo (Ctrl+Z)" aria-disabled="true"><button id="mceu_265-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i></button></div><div id="mceu_266" class="mce-widget mce-btn mce-disabled" tabindex="-1" role="button" aria-label="Redo (Ctrl+Y)" aria-disabled="true"><button id="mceu_266-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i></button></div><div id="mceu_267" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Keyboard Shortcuts (Shift+Alt+H)"><button id="mceu_267-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-wp_help"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_275" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="eu-compliance-law-checkbox-text_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press Alt-Shift-H for help." style="width: 100%; height: 100px; display: block;"></iframe></div><div id="mceu_276" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_276-body" class="mce-container-body mce-flow-layout"><div id="mceu_277" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_278" class="mce-flow-layout-item mce-last mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea class="wp-editor-area" rows="20" autocomplete="off" cols="40" name="custom-field[eu-compliance-law-checkbox-text]" id="eu-compliance-law-checkbox-text" style="display: none;" aria-hidden="true">By checking this box I consent to the use of my information provided for email marketing purposes.</textarea></div>
+													</div>
+
+													<p class="description">
+														<?php _e( "This text will display alongside the checkbox. The request for consent must be given with the purpose for data processing included. Consent must be in plain language. Note: Mailchimp limits this field to 1,000 characters and does not allow HTML. Character Count: ", 'yikes-inc-easy-mailchimp-extender' ); ?> <span id="yikes-mailchimp-character-count">98</span>
+													</p>
+												</div>
+												<label class="custom-field-section" style="opacity: 1; pointer-events: initial;" data-children-count="1">
+													<strong><?php _e( "Save Checkbox Compliance Text", 'yikes-inc-easy-mailchimp-extender' ); ?></strong>
+													<input type="checkbox" class="widefat" name="custom-field[eu-compliance-law-checkbox-save-text]" id="custom-field" value="1">
+													<p class="description">
+														<?php _e( "Should the content of the Compliance Checkbox Text be saved as a note on the subscriber?", 'yikes-inc-easy-mailchimp-extender' ); ?>
+													</p>
+												</label>
+												<label class="custom-field-section" data-children-count="1">
+													<strong><?php _e( "Disable Checkbox for this Form", 'yikes-inc-easy-mailchimp-extender' ); ?></strong>
+													<input type="checkbox" class="widefat" name="custom-field[eu-compliance-law-checkbox-disabled]" id="custom-field" value="1">
+													<p class="description"><?php _e( "Should the checkbox be displayed for this form?", 'yikes-inc-easy-mailchimp-extender' ); ?></p>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!-- check for single/double box -->
+								<!-- end single/double column check -->
+							</div>
+
+							<br class="clear">
+							</div>
+							</label>
+							<!-- End EU Law Error Compliances -->
 
 							<?php do_action( 'yikes-mailchimp-edit-form-sections', $form ); ?>
 
